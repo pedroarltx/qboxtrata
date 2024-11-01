@@ -8,6 +8,16 @@ document.getElementById('copyButton').addEventListener('click', function() {
     document.execCommand('copy'); // Copia o conteúdo para a área de transferência
 });
 
+function copiarTexto(id) {
+    const paragrafo = document.getElementById(id);
+    const textarea = document.createElement("textarea");
+    textarea.value = paragrafo.textContent;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+}
+
 async function loadCSV(url) {
     try {
         const response = await fetch(url);
