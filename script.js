@@ -1,3 +1,13 @@
+document.getElementById('clearButton').addEventListener('click', function() {
+    document.getElementById('notes').value = ''; // Limpa o conteúdo
+});
+
+document.getElementById('copyButton').addEventListener('click', function() {
+    const textarea = document.getElementById('notes');
+    textarea.select(); // Seleciona o conteúdo
+    document.execCommand('copy'); // Copia o conteúdo para a área de transferência
+});
+
 async function loadCSV(url) {
     try {
         const response = await fetch(url);
@@ -50,7 +60,7 @@ function updateTable(data) {
 }
 
 async function main() {
-    const csvData = await loadCSV('cidades.csv');
+    const csvData = await loadCSV('/CSV/cidades.csv');
 
     const searchInput = document.getElementById('searchInput');
     searchInput.addEventListener('input', () => {
