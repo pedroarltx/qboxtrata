@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #007BFF;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.tab-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tab-container > article,
+section {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(30% - 20px);
+    height: auto; /* Ajuste a altura para auto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tab-container > article:hover,
+section:hover {
+    transform: scale(1.02);
+}
+
+.tab-container h2 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.tab-container p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.tab-container ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.tab-container ul li {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Estilos para a barra de pesquisa e tabela */
+#searchInput {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container {
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+    max-width: 100%;  /* Limita a largura máxima */
+}
+
+.table-section {
+    max-height: 130px; /* Defina a altura máxima desejada */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+#resultTable {
+    width: 100%; /* Garante que a tabela ocupe 100% do espaço do contêiner */
+    border-collapse: collapse;
+    box-sizing: border-box; /* Inclui padding e border no cálculo de largura */
+}
+
+#resultTable th,
+#resultTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 10px;
+}
+
+#resultTable th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#resultTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#resultTable tr:hover {
+    background-color: #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .tab-container > article,
+    section {
+        width: calc(100% - 20px);
+    }
+}

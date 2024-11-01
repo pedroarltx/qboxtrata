@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratativas Qbox</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Tratativas Qbox</h1>
+    </header>
+    
+    <main class="tab-container">
+        <section>
+            <h2>Pesquisa de Postos</h2>
+            <input type="text" id="searchInput" placeholder="Pesquisar por cidade ou posto...">
+            <div class="table-section">
+                <table id="resultTable">
+                    <thead>
+                        <tr>
+                            <th>Cidade</th>
+                            <th>Posto</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Resultados serão preenchidos aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <article class="prdninf">
+            <div class="square"></div> <!-- Quadrado pequeno -->
+            <h2>Parada não Informada</h2>
+            <p>Se estiver em posto homologado, considerar pernoite!</p>
+            <p>Se não estiver em posto homologado, seguir com os procedimentos de contingência.</p>
+        </article>
+        
+        <article class="table-qbox">
+            <div class="square"></div>
+            <h2>Tabela Qbox</h2>
+            <p>Vai ser enviada todos os dias uma tabela com determinados veículos. Tem que ser verificado se o mesmo está em viagem/aguardando início e retornar no grupo. Foi pedido para realizar este procedimento duas vezes ao turno.</p>
+        </article>
+        
+        <article class="vnl">
+            <div class="square"></div>
+            <h2>Viagem não liberada</h2>
+            <p>Verificar se foi integrada no Trafegus.</p>
+            <p>Caso tenha sido integrada, efetivar ela no Sistec e Trafegus e colocar a anotação ○!AG>>.</p>
+        </article>
+        
+        <article class="prdp">
+            <div class="square"></div>
+            <h2>Pernoite em residência, autorizado nas cidades:</h2>
+            <p>Autorizado desengate desde que tenha sido gerado em posto. Caso tenha gerado em residência, seguir os procedimentos.</p>
+            <ul>
+                <li>São Borja</li>
+                <li>São Luiz Gonzaga</li>
+                <li>Ijui</li>
+                <li>Uruguaiana</li>
+                <li>Bossoroca</li>
+            </ul>
+        </article>
+        
+        <article class="prdpost">
+            <div class="square"></div>
+            <h2>Pernoite em posto</h2>
+            <p>Verificar na lista se o local é homologado ou não.</p>
+            <p>Se estiver em posto homologado, considerar pernoite!</p>
+            <p>Se não estiver em posto homologado, seguir com os procedimentos de contingência.</p>
+        </article>
+        
+        <article class="alerts">
+            <div class="square"></div>
+            <h2>Alertas no geral (Perda, desengate, painel...)</h2>
+            <p>Caso tenha ocorrido fora do Brasil, apenas notificar no grupo e realizar o registro.</p>
+            <p>Caso tenha ocorrido no Brasil, notificar no grupo e realizar o procedimento de contingência.</p>
+        </article>
+
+        <article class="ponts">
+            <div class="square"></div>
+            <h2>Codigo de pontos Qbox</h2>
+            <p>5049982 - PASO DE LIBRES ARGENTINA</p>
+            <p>304189 - PLANTA CAMPANA  BUENOS AIRES/AR</p>
+            <p>342365 - URUGUAIANA</p>
+        </article>
+
+        <article class="grup">
+            <div class="square"></div>
+            <h2>E-mail</h2>
+            <p>Deste modo notificamos os responsáveis através do grupo de WhatsApp Qbox - Tecnorisk onde os deixamos ciente da situação. Veiculo segue posicionando sem gerar alerta. </p>
+        </article>
+
+        <article class="pront">
+            <div class="square"></div>
+            <h2>Pronta Resposta</h2>
+            <p>Bom dia!<br>
+                Consultar prestador!<br>
+                Local:  <br>
+                
+                Veículo:<br>
+                Cavalo: <br>
+                Carreta: <br>
+                Modelo: <br>
+                Cor: <br>
+                <br>
+                Motorista:<br>
+                Nome: <br>
+                CPF: </p>
+        </article>
+
+        <article class="tabble">
+            <div class="square"></div>
+            <h2>Tabela</h2>
+            <p>Placa: <br> 
+                Carreta: <br>
+                Motorista: <br>
+                Operação: <br>
+                Carga: <br>
+                Localização: <br>
+                Situação: **</p>
+        </article>
+        
+        <article class="rest">
+            <div class="square"></div>
+            <h2>E-mail de restabelecimento</h2>
+            <p>Perda de Sinal - o veículo em questão voltou a posicionar em nosso sistema, segue a rota pré-estabelecida em sua solicitação de monitoramento e não gerou demais violações. Salientamos que a ocorrência policial foi devidamente finalizada.</p>
+            <p>Alerta - o condutor do veículo em questão voltou a seguir viagem, encontra-se com sinal atualizado e segue a rota pré-estabelecida em sua solicitação de monitoramento, não gerou demais violações. Salientamos que a ocorrência policial foi devidamente finalizada.</p>
+        </article>
+    </main>
+
+    <script src="/JV/script.js"></script>
+</body>
+</html>
