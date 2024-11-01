@@ -14,7 +14,7 @@
     <main class="tab-container">
         <section>
             <h2>Pesquisa de Postos</h2>
-            <input type="text" id="searchInput" placeholder="Pesquisar por cidade ou posto...">
+            <input type="text" id="searchInput" placeholder="Digite a cidade ou nome do posto...">
             <div class="table-section">
                 <table id="resultTable">
                     <thead>
@@ -25,14 +25,25 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Resultados serão preenchidos aqui -->
+                        <tr>
+                            <td colspan="3">Nenhum resultado encontrado.</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
+        <article class="notes">
+            <h2>Bloco de Notas</h2>
+            <textarea id="notes" rows="10" placeholder="Escreva suas notas aqui..."></textarea>
+            <div>
+                <button id="clearButton">Limpar</button>
+                <button id="copyButton">Copiar</button>
+            </div>
+        </article>
+
         <article class="prdninf">
-            <div class="square"></div> <!-- Quadrado pequeno -->
+            <div class="square"></div>
             <h2>Parada não Informada</h2>
             <p>Se estiver em posto homologado, considerar pernoite!</p>
             <p>Se não estiver em posto homologado, seguir com os procedimentos de contingência.</p>
@@ -81,16 +92,16 @@
 
         <article class="ponts">
             <div class="square"></div>
-            <h2>Codigo de pontos Qbox</h2>
+            <h2>Código de pontos Qbox</h2>
             <p>5049982 - PASO DE LIBRES ARGENTINA</p>
-            <p>304189 - PLANTA CAMPANA  BUENOS AIRES/AR</p>
+            <p>304189 - PLANTA CAMPANA BUENOS AIRES/AR</p>
             <p>342365 - URUGUAIANA</p>
         </article>
 
         <article class="grup">
             <div class="square"></div>
             <h2>E-mail</h2>
-            <p>Deste modo notificamos os responsáveis através do grupo de WhatsApp Qbox - Tecnorisk onde os deixamos ciente da situação. Veiculo segue posicionando sem gerar alerta. </p>
+            <p>Deste modo notificamos os responsáveis através do grupo de WhatsApp Qbox - Tecnorisk onde os deixamos ciente da situação. Veículo segue posicionando sem gerar alerta.</p>
         </article>
 
         <article class="pront">
@@ -98,29 +109,28 @@
             <h2>Pronta Resposta</h2>
             <p>Bom dia!<br>
                 Consultar prestador!<br>
-                Local:  <br>
-                
+                Local:<br>
                 Veículo:<br>
-                Cavalo: <br>
-                Carreta: <br>
-                Modelo: <br>
-                Cor: <br>
+                Cavalo:<br>
+                Carreta:<br>
+                Modelo:<br>
+                Cor:<br>
                 <br>
                 Motorista:<br>
-                Nome: <br>
-                CPF: </p>
+                Nome:<br>
+                CPF:</p>
         </article>
 
         <article class="tabble">
             <div class="square"></div>
             <h2>Tabela</h2>
-            <p>Placa: <br> 
-                Carreta: <br>
-                Motorista: <br>
-                Operação: <br>
-                Carga: <br>
-                Localização: <br>
-                Situação: **</p>
+            <p>Placa:<br> 
+                Carreta:<br>
+                Motorista:<br>
+                Operação:<br>
+                Carga:<br>
+                Localização:<br>
+                Situação:**</p>
         </article>
         
         <article class="rest">
@@ -128,6 +138,12 @@
             <h2>E-mail de restabelecimento</h2>
             <p>Perda de Sinal - o veículo em questão voltou a posicionar em nosso sistema, segue a rota pré-estabelecida em sua solicitação de monitoramento e não gerou demais violações. Salientamos que a ocorrência policial foi devidamente finalizada.</p>
             <p>Alerta - o condutor do veículo em questão voltou a seguir viagem, encontra-se com sinal atualizado e segue a rota pré-estabelecida em sua solicitação de monitoramento, não gerou demais violações. Salientamos que a ocorrência policial foi devidamente finalizada.</p>
+        </article>
+        
+        <article class="perclt">
+            <div class="square"></div>
+            <h2>Perda em Cliente</h2>
+            <p>Notificamos que o veículo em questão está com perda de sinal em pátio de cliente/transportadora. Deste modo não seguiremos com o procedimento de contingência. Veículo não gerou alerta antes da perda. Todos os comandos cabíveis foram enviados ao veículo.</p>
         </article>
     </main>
 
